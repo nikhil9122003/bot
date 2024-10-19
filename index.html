@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Help Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chatbot">
+        <header>
+            <h2>Depression Help Bot</h2>
+        </header>
+        <div id="chatbox">
+            <div id="messages"></div>
+        </div>
+        <div id="inputArea">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button id="sendButton">Send</button>
+        </div>
+        <button id="historyButton">Show Message History</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Message History</h2>
+            <div id="historyContent"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
